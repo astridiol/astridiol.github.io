@@ -16,8 +16,39 @@ margin:4px;
 
 a {
 color:#f73ec3;
+text-decoration: none
+
 }
 
+a:hover {
+color: #eea2f2;
+text-decoration: none
+}
+
+.hr-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+hr {
+  width: 100%;
+  border: none;
+  border-top: 2px ;
+  position: relative;
+}
+.vertical-bar {
+  position: absolute;
+  height: 20px; /* Adjust height as needed */
+  width: 3px;
+  background-color: ;
+}
+.left-bar {
+  left: 0;
+}
+.right-bar {
+  right: 0;
+}
 
 /* Full-screen video in the background */
 #test {
@@ -96,4 +127,8 @@ hr {
   max-height: none;
   overflow-y: auto;
   margin-bottom: 10px;
+}
+
+.downloadhover:hover {
+color: #eea2f2;
 }
