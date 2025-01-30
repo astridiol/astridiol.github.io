@@ -5,6 +5,7 @@ html, body {
   width: 100%;
   background: none;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: "Helvetica", Sans-Serif;
 }
 
 html {
@@ -96,24 +97,24 @@ h2, h3, h4, p {
   font-size: 28px;
   font-family: monospace;
   letter-spacing: 3px;
-  animation: colorRotate 10s linear infinite;
+  animation: colorRotate 6s linear infinite;
 }
 
 @keyframes colorRotate {
   from {
-      color: #6666ff;
+      color: #5c074a;
   }
   10% {
-      color: #4da6bd;
+      color: #a32a89;
   }
   50% {
-      color: #38b09e;
+      color: #7745b5;
   }
   75% {
-      color: #5242c9;
+      color: #ff3399;
   }
   100% {
-      color: #6666ff;
+      color: #5c074a;
   }
 }
 
