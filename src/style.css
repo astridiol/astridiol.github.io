@@ -1,0 +1,66 @@
+html, body {
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-left: 2px solid #b740e6;  /* Adds a vertical left border */
+    border-right: 2px solid #b740e6; /* Adds a vertical right border */
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh; /* Ensures full screen height */
+    padding-top: 50px; /* Moves everything down slightly */
+  }
+  
+  .centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px; /* Keeps content from stretching too wide */
+  }
+  
+  h2, h3, h4, p {
+    margin: 5px 0; /* Reduces unnecessary space between text elements */
+  }
+  
+  #topbar {
+    position: relative;
+    z-index: 10; /* Ensures it stays visible */
+    padding-bottom: 20px; /* Adds spacing below */
+  }
+  
+  
+  
+  .rainbow {
+    text-align: center;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 6s linear 0s infinite;
+  }
+  
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+  
