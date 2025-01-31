@@ -1,8 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
   background: none;
   overflow-x: hidden; /* Prevent horizontal scroll */
   font-family: "Helvetica", Sans-Serif;
@@ -18,9 +16,7 @@ img {
 html {
 cursor: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cleanpng.com%2Fpng-computer-mouse-pointer-cursor-clip-art-1894796%2F&psig=AOvVaw2GycjJqRWyP8WuCIBoUjif&ust=1738301039207000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKim65HanIsDFQAAAAAdAAAAABARg"), auto;
 }
-hr {
-margin:4px;
-}
+
 
 a {
 color:#f73ec3;
@@ -33,30 +29,9 @@ color: #eea2f2;
 text-decoration: none
 }
 
-.hr-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-hr {
-  width: 100%;
-  border: none;
-  border-top: 2px ;
-  position: relative;
-}
-.vertical-bar {
-  position: absolute;
-  height: 20px; /* Adjust height as needed */
-  width: 3px;
-  background-color: ;
-}
-.left-bar {
-  left: 0;
-}
-.right-bar {
-  right: 0;
-}
+
+
+
 
 /* Full-screen video in the background */
 #test {
@@ -95,11 +70,6 @@ h2, h3, h4, p {
   margin: 5px 0;
 }
 
-#topbar {
-  padding-bottom: 15px;
-  z-index: 10;
-}
-
 .rainbow {
   font-size: 28px;
   font-family: monospace;
@@ -109,33 +79,24 @@ h2, h3, h4, p {
 
 @keyframes colorRotate {
   from {
-      color: #5c074a;
+    color: #6666ff;
   }
   10% {
-      color: #a32a89;
+    color: #0099ff;
   }
   50% {
-      color: #7745b5;
+    color: #00ff00;
   }
   75% {
-      color: #ff3399;
+    color: #ff3399;
   }
   100% {
-      color: #5c074a;
+    color: #6666ff;
   }
 }
 
-hr {
-  border: 0;
-  border-top: 2px solid #b740e6;
-  margin: 10px 0;
-}
 
-.scrollable-content {
-  max-height: none;
-  overflow-y: auto;
-  margin-bottom: 10px;
-}
+
 
 .downloadhover:hover {
 color: #eea2f2;
