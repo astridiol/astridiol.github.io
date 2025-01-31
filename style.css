@@ -6,6 +6,13 @@ html, body {
   background: none;
   overflow-x: hidden; /* Prevent horizontal scroll */
   font-family: "Helvetica", Sans-Serif;
+  font-size: larger;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: max-content;
 }
 
 html {
