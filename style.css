@@ -3,8 +3,8 @@ html, body {
   padding: 0;
   background: none;
   overflow-x: hidden; /* Prevent horizontal scroll */
-  font-family: "Helvetica", Sans-Serif;
   font-size: larger;
+  font-smooth: never;
 }
 
 img {
@@ -13,10 +13,15 @@ img {
   max-width: max-content;
 }
 
-html {
-cursor: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cleanpng.com%2Fpng-computer-mouse-pointer-cursor-clip-art-1894796%2F&psig=AOvVaw2GycjJqRWyP8WuCIBoUjif&ust=1738301039207000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKim65HanIsDFQAAAAAdAAAAABARg"), auto;
-}
+ @font-face {
+            font-family: 'w95';
+            src: url('fonts/w95fa.woff2') format('woff2'),
+                 url('fonts/w95fa.woff') format('woff');
+        }
 
+        html,body {
+            font-family: 'w95', sans-serif;
+        }
 
 a {
 color:#f73ec3;
@@ -72,7 +77,6 @@ h2, h3, h4, p {
 
 .rainbow {
   font-size: 28px;
-  font-family: monospace;
   letter-spacing: 3px;
   animation: colorRotate 6s linear infinite;
 }
