@@ -5,6 +5,7 @@ html, body {
   overflow-x: hidden; /* Prevent horizontal scroll */
   font-size: larger;
   font-smooth: never;
+  image-rendering: pixelated;
 }
 
 img {
