@@ -7,6 +7,7 @@ html, body {
   font-smooth: never;
   image-rendering: pixelated;
   cursor: url('images/cursor.png'), auto;
+  background-image: url(videos/flyingtoast.gif);
 }
 
 img {
