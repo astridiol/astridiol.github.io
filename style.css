@@ -6,7 +6,7 @@ html, body {
   font-size: larger;
   font-smooth: never;
   image-rendering: pixelated;
-  cursor: url('images/cursor.png'), auto;
+  cursor: url('images/cursors/cur.png'), auto;
   background-image: url(videos/flyingtoast.gif);
 }
 
@@ -27,14 +27,14 @@ img {
         }
 
 a {
-color:#f73ec3;
-text-decoration: none
-
+  color:#f73ec3;
+  text-decoration: none;
 }
 
 a:hover {
 color: #eea2f2;
-text-decoration: none
+text-decoration: none;
+cursor: url('images/cursors/linkcur.png'), auto;
 }
 
 
