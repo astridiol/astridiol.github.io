@@ -43,19 +43,66 @@
     cursor: url('images/cursors/linkcur.png'), auto;
   }
   
+  /* SNOW EFFECT */
+        .snow {
+            pointer-events: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation-name: fall;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            100% {
+                transform: translateY(100vh) translateX(30px);
+            }
+        }
 </style>
       
 
 <body>
+    <!-- SNOW LAYER -->
+<div class="snow">
+  <div class="snowflake" style="left: 5%; animation-duration: 10s; width:6px; height:6px;"></div>
+  <div class="snowflake" style="left: 15%; animation-duration: 12s; width:8px; height:8px;"></div>
+  <div class="snowflake" style="left: 25%; animation-duration: 8s; width:5px; height:5px;"></div>
+  <div class="snowflake" style="left: 35%; animation-duration: 14s; width:7px; height:7px;"></div>
+  <div class="snowflake" style="left: 45%; animation-duration: 11s; width:6px; height:6px;"></div>
+  <div class="snowflake" style="left: 55%; animation-duration: 9s; width:7px; height:7px;"></div>
+  <div class="snowflake" style="left: 65%; animation-duration: 13s; width:8px; height:8px;"></div>
+  <div class="snowflake" style="left: 75%; animation-duration: 10s; width:5px; height:5px;"></div>
+  <div class="snowflake" style="left: 85%; animation-duration: 15s; width:7px; height:7px;"></div>
+  <div class="snowflake" style="left: 95%; animation-duration: 9s; width:6px; height:6px;"></div>
+</div>
+
     <div class="wrapper">
         <div class="centered-container">
             <div id="topbar">
                 <h3 class="rainbow">you stand no chance
-                <a href="https://github.com/astridiol/You-Stand-No-Chance-Fabric/releases" style="color: green;" id="downloadhover">[download now]</a></h3>
+                <a href="https://github.com/razziedazzy/You-Stand-No-Chance-Fabric/releases" style="color: green;" id="downloadhover">[download now]</a></h3>
                 <h3><b style="color: slateblue;">status: you stand no chance</b></h3>
                 <br>
                 <br>
-                <h3><a href="https://astridiol.github.io/">[homepage]</a></h3>
+                <h3><a href="index.html">[homepage]</a></h3>
             </div>
 
             <div class="scrollable-content" id="pageContent">
@@ -80,7 +127,7 @@
                 <br>
                 <hr>
                 <h4>this mod is under the CC0-1.0 license. feel free to use and modify it :3</h4>
-                <h3><a href="https://github.com/astridiol/You-Stand-No-Chance-Fabric">[source code]</a></h3>
+                <h3><a href="https://github.com/razziedazzy/You-Stand-No-Chance-Fabric">[source code]</a></h3>
             </div>
         </div>
     </div>

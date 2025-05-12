@@ -39,16 +39,64 @@
     -webkit-transform:scale(1.2); /* or some other value */
     transform:scale(1.2);
     cursor: url('images/cursors/linkcur.png'), auto;
-  }
+  }/* SNOW EFFECT */
+        .snow {
+            pointer-events: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation-name: fall;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            100% {
+                transform: translateY(100vh) translateX(30px);
+            }
+        }
+
 </style>
       
 <body>
+    <!-- SNOW LAYER -->
+<div class="snow">
+  <div class="snowflake" style="left: 5%; animation-duration: 10s; width:6px; height:6px;"></div>
+  <div class="snowflake" style="left: 15%; animation-duration: 12s; width:8px; height:8px;"></div>
+  <div class="snowflake" style="left: 25%; animation-duration: 8s; width:5px; height:5px;"></div>
+  <div class="snowflake" style="left: 35%; animation-duration: 14s; width:7px; height:7px;"></div>
+  <div class="snowflake" style="left: 45%; animation-duration: 11s; width:6px; height:6px;"></div>
+  <div class="snowflake" style="left: 55%; animation-duration: 9s; width:7px; height:7px;"></div>
+  <div class="snowflake" style="left: 65%; animation-duration: 13s; width:8px; height:8px;"></div>
+  <div class="snowflake" style="left: 75%; animation-duration: 10s; width:5px; height:5px;"></div>
+  <div class="snowflake" style="left: 85%; animation-duration: 15s; width:7px; height:7px;"></div>
+  <div class="snowflake" style="left: 95%; animation-duration: 9s; width:6px; height:6px;"></div>
+</div>
+
+
     <div class="wrapper">
         <div class="centered-container">
             <div id="topbar">
-                <h3 class="rainbow">open source ricochet <a href="https://github.com/astridiol/open-source-ricochet/releases/tag/alpha" style="color: green;">[download now]</a></h3>
+                <h3 class="rainbow">open source ricochet <a href="https://github.com/razziedazzy/open-source-ricochet/releases/tag/alpha" style="color: green;">[download now]</a></h3>
                 <h3><b style="color: slateblue;">status: open source ricochet</b><br><br></h3>
-                <h3><a href="https://astridiol.github.io/">[homepage]</a></h3>
+                <h3><a href="index.html">[homepage]</a></h3>
                 <h2></h2>
                 <hr>
                 <h2>overview:</h2>
@@ -67,7 +115,7 @@
                 </h4>
                 <hr>
                 <h4>gnu general public license v3.0 | gplv3 is a copyleft license and any modified versions of the software must also be licensed under the gplv3. feel free to use and modify it :3</h4>
-                <h3><a href="https://github.com/astridiol/open-source-ricochet/">[source code]</a></h3>
+                <h3><a href="https://github.com/razziedazzy/open-source-ricochet/">[source code]</a></h3>
             </div>
         </div>
     </div>
